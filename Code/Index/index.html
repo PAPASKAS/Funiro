@@ -9,8 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="../../Source/Img/logo.svg">
-
     <link rel="stylesheet" href="Fonts.css">
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="Media.css">
@@ -21,9 +19,171 @@
 <body>
     
     <header>
-        
+        <nav class="container d-flex justify-content-between align-items-center navbar navbar-expand-xl">
+            <span class="left-side d-xl-flex">
+
+                <a class="navbar-brand logo" href="#">Funiro.</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-flex"><img src="../../Source/Img/menu_black_24dp.svg" alt=""></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Products
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Rooms
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Inspirations</a>
+                      </li>
+                      <li class="nav-item d-xl-none">
+                        <a href="#" class="nav-link">Favourite</a>
+                      </li>
+                      <li class="nav-item d-xl-none">
+                        <a href="#" class="nav-link">Shopping basket</a>
+                      </li>
+                      <li class="nav-item d-xl-none">
+                        <a href="#" class="nav-link">Profile</a>
+                      </li>
+                    </ul>
+
+                    <form class="d-flex">
+                      <button type="submit"><img src="../../Source/Img/Search.svg" alt="Search"></button>
+                      <input class="form-control" type="search" placeholder="Search for minimalist chair" required>
+                    </form>
+                </div>
+
+            </span>
+            <span class="right-side d-flex align-items-center d-xl-flex d-none">
+                <a href="#"><img src="../../Source/Img/Heart.svg" alt="like"></a>
+                <a href="#"><img src="../../Source/Img/Cart.svg" alt="shopping basket "></a>
+                <a href="#"><img src="../../Source/Img/header profile.png" alt="profile"></a>
+            </span>
+        </nav>
     </header>
 
+    <div class="intro position-relative">
+        <div class=background></div>
+        <div class="slider position-absolute">
+            <div class="move-slider d-flex">
+                <span class="slide">
+                    <img src="../../Source/Img/intro slide 3.jpg" class="d-block" alt="room design">
+                </span>
+                <span class="slide">
+                    <img src="../../Source/Img/intro slide 1.jpg" class="d-block" alt="room design">
+                </span>
+                <span class="slide">
+                    <img src="../../Source/Img/intro slide 2.jpg" class="d-block" alt="room design">
+                </span>
+                <span class="slide">
+                    <img src="../../Source/Img/intro slide 3.jpg" class="d-block" alt="room design">
+                </span>
+            </div>
+        </div>
+        <div class="container position-relative d-flex justify-content-between">
+            <a href="#" class="info-box d-block">
+                <h4>Bohauss</h4>
+                <p>Luxury big sofa 2-seat</p>
+                <div class="d-flex justify-content-between">
+                    <p>Rp 17.000.000</p>
+                    <img src="../../Source/Img/arrow intro info-box.svg" alt="arrow">
+                </div>
+            </a>
+            <span class="d-flex">
+                <span class="shop">
+                    <h1>High-Quality Furniture Just For You</h1>
+                    <p>Our furniture is made from selected and best quality materials that are suitable for your dream home</p>
+                    <a href="#">Shop Now</a>
+                </span>
+                <span class="nav-slider d-flex">
+                    <span>
+                        <div></div>
+                    </span>
+                    <span>
+                        <div></div>
+                    </span>
+                    <span>
+                        <div></div>
+                    </span>
+                    <span>
+                        <div></div>
+                    </span>
+                </span>
+            </span>           
+            <span class=button-slider>
+                <button class="carousel-control-prev" onclick="slider_intro_prev('.intro .move-slider' , '20')">
+                    <img src="../../Source/Img/arrow intro left.svg" alt="arrow">
+                </button>
+                <button class="carousel-control-next" onclick="slider_intro_next('.intro .move-slider' , '20')">
+                    <img src="../../Source/Img/arrow intro right.svg" alt="arrow">
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <div class="feature container d-flex justify-content-evenly justify-content-xxl-between flex-wrap gap-4">
+        <span>
+            <img src="../../Source/Img/trophy.svg" alt="trophy">
+            <span>
+                <p>High Quality</p>
+                <p>crafted from top materials</p>
+            </span>
+        </span>
+        <span>
+            <img src="../../Source/Img/guarantee.svg" alt="guarantee">
+            <span>
+                <p>Warrany Protection</p>
+                <p>Over 2 years</p>
+            </span>
+        </span>
+        <span>
+            <img src="../../Source/Img/shipping.svg" alt="shippng">
+            <span>
+                <p>Free Shipping</p>
+                <p>Order over 150 $</p>
+            </span>
+        </span>
+        <span>
+            <img src="../../Source/Img/customer-support.svg" alt="customer support">
+            <span>
+                <p>24 / 7 Support</p>
+                <p>Dedicated support</p>
+            </span>
+        </span>
+    </div>
+
+    <div class="our-products">
+        <p>Our Products</p>
+        <div class="d-grid">
+            <span><!--position relative -> img(-30%) == position absolute -->
+                <img src="../../Source/Img/our products 1.jpg" alt="product">
+                <h5>Syltherine</h5>
+                <p>Stylish cafe chair</p>
+                <div>
+                    <span>Rp 2.500.000</span>
+                    <span>Rp 3.500.000</span>
+                </div>
+            </span>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="Script.js"></script>

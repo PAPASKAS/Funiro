@@ -16,3 +16,165 @@ span{
     --Green-Accents:#2EC1AC;
     --Red-Accents:#E97171;
 }
+
+
+
+
+
+
+/*header*/
+header{
+    padding:48px 0;
+    background: linear-gradient(90deg, #F9F1E7 68%, #FCF8F3 32%);
+}
+header .left-side{
+    gap:40px;
+}
+header .left-side > *{
+    margin:auto 0;
+}
+header div > ul > li{
+    margin-right:40px;
+}
+header form{
+    width:473px;
+    position: relative;
+}
+header form input{
+    padding:0 10px 0 44px !important;
+    max-width:473px !important;
+    width:100% !important;
+    height: 45px;
+    border:none !important;
+    outline:none;
+}
+header form button{
+    border:none;
+    display:flex;
+    align-items:center;
+    outline:none;
+    cursor:pointer;
+    background:none;
+    position: absolute;
+    margin-left:7px;
+    top:0;
+    bottom:0;
+}
+header nav .right-side{
+    gap:40px;
+}
+
+
+
+
+
+
+
+
+/*intro*/
+.intro{
+    margin-bottom:200px;
+}
+.intro > .background{
+    background: linear-gradient(90deg, #F9F1E7 68%, #FCF8F3 32%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.intro .slider{
+    max-width:1440px;
+    margin:90px auto 0 auto;
+    left:0;
+    right:0;
+    z-index:1;
+    overflow: hidden;
+}
+.intro .move-slider{
+    margin-left:435px;
+    gap:20px;
+    position: relative;
+    transition:500ms;
+    right:0px;
+}
+.intro .container > span{
+    position: relative;
+    z-index: 100;
+}
+.intro .container .shop{
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(31px);
+    max-width:494px;
+    padding:60px;
+    margin-right:32px;
+}
+.intro .container .shop a{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 78px;
+    background: var(--primary);
+    transition:300ms;
+}
+.intro .container .shop a:hover{
+    box-shadow: 5px 5px 15px var(--primary)
+}
+.intro .info-box{
+    position: absolute;
+    z-index: 100;
+    right:0;
+    bottom:0;
+    padding:24px 30px 24px 24px;
+    transition:300ms;
+    margin: 0 50px -90px 0;
+    width: 294px;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(31px);
+}
+.intro .info-box div > *{
+    margin:auto 0;
+}
+.intro .nav-slider{
+    margin-top:32px;
+    gap:12px;
+}
+.intro .nav-slider span{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border-radius:100px;
+    border:1px solid #F9F1E7;
+    width: 27px;
+    height: 27px;
+}
+.intro .nav-slider div{
+    width: 11px;
+    height: 11px;
+    background: var(--gray5);
+    border-radius: 100px;
+}
+.intro .button-slider{
+    margin-top:20px;
+    width: 104px;
+}
+.intro button{
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+
+/*feature*/
+.feature > span{
+    display:flex;
+    min-width:300px;
+    gap:24px;
+    align-items: center;
+}
+.feature p{
+    margin:0;
+}

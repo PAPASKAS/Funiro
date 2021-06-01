@@ -1,3 +1,134 @@
 *{
     text-decoration:none !important;
 }
+@font-face {
+    font-family: Gilroy;
+    src: url(../../Source/Fonts/gilroy-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy-medium;
+    src: url(../../Source/Fonts/gilroy-medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Gilroy-bold;
+    src: url(../../Source/Fonts/gilroy-bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+:root{
+    --white:#FFFFFF;
+    --gray1:#3A3A3A;
+    --gray2:#616161;
+    --gray3:#898989;
+    --gray4: #B0B0B0;
+    --gray5:#D8D8D8;
+    --lightBG: #F4F5F7;
+    --primary: #E89F71;
+    --Green-Accents:#2EC1AC;
+    --Red-Accents:#E97171;
+}
+
+
+
+
+/*header*/
+header .logo{
+    font-family: Gilroy-bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+header ul *{
+    font-family: Gilroy-medium;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray1) !important;
+}
+header form::placeholder{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray2);    
+}
+
+
+
+
+
+
+/*intro*/
+.intro .container .shop h1{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 120%;
+    color: var(--gray1);    
+}
+.intro .container .shop p{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray3);
+}
+.intro .container .shop a{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--white);    
+}
+.intro .info-box h4{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: var(--gray1);
+}
+.intro .info-box p:first-of-type{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray2);
+}
+.intro .info-box p:last-of-type{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray1);    
+}
+
+
+
+
+/*feature*/
+.feature p:first-of-type{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--gray1);
+}
+.feature p:last-of-type{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray3);    
+}
