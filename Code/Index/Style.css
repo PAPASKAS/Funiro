@@ -27,6 +27,9 @@ header{
     padding:48px 0;
     background: linear-gradient(90deg, #F9F1E7 68%, #FCF8F3 32%);
 }
+header .logo:hover{
+    color: #000000;
+}
 header .left-side{
     gap:40px;
 }
@@ -95,7 +98,6 @@ header nav .right-side{
     gap:20px;
     position: relative;
     transition:500ms;
-    right:0px;
 }
 .intro .container > span{
     position: relative;

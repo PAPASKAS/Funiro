@@ -4,6 +4,9 @@ let description_box_info = ['Luxury big sofa 2-seat', 'Luxury mini sofa 3-seat',
 let price_box_info = ['Rp 17.000.000', 'Rp 25.000.000', 'Rp 127.000.000', 'Rp 1.000.000']
 
 document.querySelectorAll(".intro .nav-slider span")[0].style.border = "1px solid var(--primary)"
+document.querySelectorAll(".intro .nav-slider div")[0].style.background = "var(--primary)"
+
+slider_intro_next('.intro .move-slider' , '20')
 
 function slider_intro_next(link, gap){
     let quantity_slide = document.querySelectorAll(link + "> span").length
