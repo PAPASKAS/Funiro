@@ -14,6 +14,12 @@
     font-style: normal;
 }
 @font-face {
+    font-family: Gilroy-semobold;
+    src: url(../../Source/Fonts/gilroy-semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
     font-family: Gilroy-bold;
     src: url(../../Source/Fonts/gilroy-bold.ttf);
     font-weight: bold;
@@ -64,17 +70,13 @@ header form::placeholder{
 
 /*intro*/
 .intro .container .shop h1{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: bold;
+    font-family: Gilroy-bold;
     font-size: 56px;
     line-height: 120%;
     color: var(--gray1);    
 }
 .intro .container .shop p{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
+    font-family: Gilroy-medium;
     font-size: 20px;
     line-height: 150%;
     color: var(--gray3);
@@ -95,15 +97,13 @@ header form::placeholder{
     line-height: 120%;
     color: var(--gray1);
 }
-.intro .info-box p:first-of-type{
-    font-family: Gilroy;
-    font-style: normal;
-    font-weight: 500;
+.intro .info-box > p:first-of-type{
+    font-family: Gilroy-medium;
     font-size: 16px;
     line-height: 150%;
     color: var(--gray2);
 }
-.intro .info-box p:last-of-type{
+.intro .info-box div p{
     font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
@@ -125,9 +125,183 @@ header form::placeholder{
     color: var(--gray1);
 }
 .feature p:last-of-type{
+    font-family: Gilroy-medium;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray3);    
+}
+
+
+
+
+
+
+
+/*our products*/
+.our-products-wrapper > h2{
+    font-family: Gilroy-bold;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--gray1);
+}
+.our-products h5{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--gray1);    
+}
+.our-products p {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray3);    
+}
+.our-products div .price{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray1);
+}
+.our-products div .sale{
+    font-family: Gilroy;
+    text-decoration: line-through !important;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray4);
+}
+.our-products .product .label{
+    font-family: Gilroy-medium;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);    
+}
+.our-products .mouse-over-button div > a{
+    font-family: Gilroy-semibold;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--primary);    
+}
+.our-products .mouse-over-button span a{
+    font-family: Gilroy-semibold;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);    
+}
+.our-products-wrapper .show-more{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--primary);    
+}
+
+
+
+
+
+
+
+/*.inspirations*/
+.inspirations h2{
+    font-family: Gilroy-bold;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--gray1);    
+}
+.inspirations p{
+    font-family: Gilroy-medium;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray2);    
+}
+.inspirations a{
+    font-family: Gilroy-semibold;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);    
+}
+
+
+
+
+
+/*.tips-trick*/
+.tips-trick h2{
+    font-family: Gilroy-bold;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--gray1);    
+}
+.tips-trick .slide h5{
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--gray1);    
+}
+.tips-trick .slide p{
+    font-family: Gilroy;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray3);    
+}
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+footer span:first-of-type a:first-of-type{
+    font-family: Gilroy-bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;    
+}
+footer span:first-of-type a:first-of-type:hover{
+    color: #000000;    
+}
+footer span:first-of-type a:last-of-type{
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray2);    
+}
+footer span:first-of-type a:last-of-type:hover{
+    color: var(--gray2);
+}
+footer span:not(:first-of-type) p{
+    font-family: Gilroy-bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+footer span:first-of-type p{
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray2);    
+}
+footer ul li a{
+    font-family: Gilroy-medium;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray2);    
+}
+footer input::placeholder{
+    font-family: Gilroy;
     font-size: 16px;
     line-height: 150%;
     color: var(--gray3);    

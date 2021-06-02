@@ -77,3 +77,89 @@ function  slider_intro_prev(link, gap){
 
     document.querySelector(link).style.right = slide_width * current_slide_intro  + gap * current_slide_intro  + "px"
 }
+
+
+
+
+
+//our products
+function product_over(n){
+    document.querySelectorAll(".our-products .product .label")[n].style.display = "none"
+    document.querySelectorAll(".our-products .mouse-over-button")[n].style.display = "grid"
+}
+function product_out(n){
+    document.querySelectorAll(".our-products .product .label")[n].style.display = "flex"
+    document.querySelectorAll(".our-products .mouse-over-button")[n].style.display = "none"
+}
+
+
+
+
+//tips-trick
+let current_slide_tips_trick = 0
+document.querySelectorAll(".tips-trick .nav-slider span")[0].style.border = "1px solid var(--primary)"
+document.querySelectorAll(".tips-trick .nav-slider div")[0].style.background = "var(--primary)"
+
+function tips_trick_next(link, gap){
+    let quantity_slide = document.querySelectorAll(link + "> span").length
+    let slide_width = document.querySelector(link + "> span").offsetWidth
+    let width_slider = document.querySelector(link).offsetWidth
+
+    if(slide_width * 4 < width_slider){//Колличество слайдов на экране
+        quantity_slide-=4
+    }else if(slide_width * 3 < width_slider){
+        quantity_slide-=3
+    }else if(slide_width * 2 < width_slider){
+        quantity_slide-=2
+    }else{
+        quantity_slide-=1
+    }
+
+    document.querySelectorAll(".tips-trick .nav-slider span")[current_slide_tips_trick].style.border = "1px solid #FFFFFF"
+    document.querySelectorAll(".tips-trick .nav-slider div")[current_slide_tips_trick].style.background = "var(--gray5)"
+
+    if(current_slide_tips_trick  < quantity_slide){
+        current_slide_tips_trick ++
+    }else{
+        current_slide_tips_trick  = 0
+    } 
+
+    document.querySelectorAll(".tips-trick .nav-slider span")[current_slide_tips_trick].style.border = "1px solid var(--primary)"
+    document.querySelectorAll(".tips-trick .nav-slider div")[current_slide_tips_trick].style.background = "var(--primary)"
+
+    document.querySelector(link).style.right = slide_width * current_slide_tips_trick  + gap * current_slide_tips_trick  + "px"
+}
+
+function tips_trick_prev(link, gap){
+    let quantity_slide = document.querySelectorAll(link + "> span").length
+    let slide_width = document.querySelector(link + "> span").offsetWidth
+    let width_slider = document.querySelector(link).offsetWidth
+
+    if(slide_width * 4 < width_slider){//Колличество слайдов на экране
+        quantity_slide-=4
+        console.log("4")
+    }else if(slide_width * 3 < width_slider){
+        quantity_slide-=3
+        console.log("3")
+    }else if(slide_width * 2 < width_slider){
+        quantity_slide-=2
+        console.log("2")
+    }else{
+        quantity_slide-=1
+        console.log("1")
+    }
+    
+    document.querySelectorAll(".tips-trick .nav-slider span")[current_slide_tips_trick].style.border = "1px solid #FFFFFF"
+    document.querySelectorAll(".tips-trick .nav-slider div")[current_slide_tips_trick].style.background = "var(--gray5)"
+
+    if(current_slide_tips_trick > 0){
+        current_slide_tips_trick--
+    }else{
+        current_slide_tips_trick = quantity_slide
+    }
+
+    document.querySelectorAll(".tips-trick .nav-slider span")[current_slide_tips_trick].style.border = "1px solid var(--primary)"
+    document.querySelectorAll(".tips-trick .nav-slider div")[current_slide_tips_trick].style.background = "var(--primary)"
+
+    document.querySelector(link).style.right = slide_width * current_slide_tips_trick  + gap * current_slide_tips_trick  + "px"
+}

@@ -52,3 +52,34 @@
         }
     }
 }
+
+
+
+
+
+
+/*tips trick*/
+@media(max-width:767px){
+    .tips-trick .slide img{
+        width:320px;
+    }
+    .tips-trick .button-slider img:first-of-type{
+        transform:translate(0,-55px);
+    }
+    .tips-trick .button-slider img:last-of-type{
+        transform:translate(0,-55px);
+    }
+}
+
+
+
+
+
+
+
+/*footer*/
+@media (max-width:991px) {
+    footer .btn{
+        transform: translate(-13px);
+    }
+}
