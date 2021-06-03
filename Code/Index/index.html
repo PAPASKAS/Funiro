@@ -402,35 +402,41 @@
 
     <div class="inspirations-background">
         <div class="inspirations-wrapper">
-            <div class="slider-wrapper position-absolute">
-                <div class="slider">
-                    <div class="move-slider">
-                        <span><img src="../../Source/Img/inspirations 1.jpg" alt=""></span>
-                        <span><img src="../../Source/Img/inspirations 2.jpg" alt=""></span>
-                        <span><img src="../../Source/Img/inspirations 3.jpg" alt=""></span>
-                        <span><img src="../../Source/Img/inspirations 2.jpg" alt=""></span>
+
+            <div class="inspirations-slider-wrapper-absolute position-absolute">
+                <div class="inspirations-slider-wrapper">
+                    <div class="slider d-flex">
+                        <span><img src="../../Source/Img/inspirations 1.jpg" alt="slide" class="slide"></span>
+                        <span><img src="../../Source/Img/inspirations 2.jpg" alt="slide" class="slide"></span>
+                        <span><img src="../../Source/Img/inspirations 3.jpg" alt="slide" class="slide"></span>
+                        <span><img src="../../Source/Img/inspirations 1.jpg" alt="slide" class="slide"></span>
+                        <span></span><!-- колличество слайдов -->
                     </div>
-                </div>
-                <div class="d-flex align-items-end">
-                    <span class="info-box d-flex align-items-end">
+                    <div class="nav-slider d-flex">
+                        <span><div></div></span>
+                        <span><div></div></span>
+                        <span><div></div></span>
+                        <span><div></div></span>
+                    </div>
+                    <div class="info-box d-flex align-items-end">
                         <span>
-                            <div class="d-flex align-items-center gap-2">
+                            <div class="d-flex align-items-center">
                                 <p>01</p>
                                 <span></span>
                                 <p>Bed Room</p>
                             </div>
                             <h4>Inner Peace</h4>
                         </span>
-                        <a href="#"><img src="../../Source/Img/inspirations arrow.svg" alt="arrow"></a>
-                    </span>
-                    <span class="nav-slider d-flex">
-                        <span><div></div></span>
-                        <span><div></div></span>
-                        <span><div></div></span>
-                        <span><div></div></span>
-                    </span>
+                        <a href="#"><img src="../../Source/Img/inspirations arrow.svg" alt=""></a>
+                    </div>
+                    
+                    <div class="button-slider" onclick="inspirations_slider('.inspirations-slider-wrapper .slider','24')">
+                        <img src="../../Source/Img/inspirations next.svg" alt="">
+                    </div>
+                    
                 </div>
             </div>
+            
             <div class="container inspirations">
                 <h2>50+ Beautiful rooms inspiration</h2>
                 <p>Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
@@ -499,7 +505,7 @@
     </div>
 
     <div class="footer-wrapper container">
-        <footer class="d-flex flex-wrap gap-3 gap-xl-1">
+        <footer class="d-flex flex-wrap gap-3 gap-xl-2">
             <span>
                 <a href="#">Funiro.</a>
                 <p>Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</p>

@@ -163,3 +163,62 @@ function tips_trick_prev(link, gap){
 
     document.querySelector(link).style.right = slide_width * current_slide_tips_trick  + gap * current_slide_tips_trick  + "px"
 }
+
+
+
+
+let current_slide_inspirations = 0
+document.querySelectorAll(".inspirations-slider-wrapper .slide")[0].style.height = "582px"
+nav_slider_inspirations('.inspirations-slider-wrapper', current_slide_inspirations, 1)  
+
+function inspirations_slider(link, gap){
+    let quantity_slide = document.querySelectorAll(link + " span").length
+    let slide_width = document.querySelector(link + " img").offsetWidth
+    let width_slider = document.querySelector(link).offsetWidth
+
+    if(slide_width * 4 < width_slider){//Колличество слайдов на экране
+        quantity_slide-=4
+    }else if(slide_width * 3 < width_slider){
+        quantity_slide-=3
+    }else if(slide_width * 2 < width_slider){
+        quantity_slide-=2
+    }else{
+        quantity_slide-=1
+    }
+
+    document.querySelectorAll(link + " .slide")[current_slide_inspirations].style.height = "486px"
+
+    nav_slider_inspirations('.inspirations-slider-wrapper', current_slide_inspirations, 0)
+
+    if(current_slide_inspirations < quantity_slide){
+        current_slide_inspirations++
+    }else{
+        current_slide_inspirations = 0
+    } 
+
+    nav_slider_inspirations('.inspirations-slider-wrapper', current_slide_inspirations, 1)
+    info_box_inspirations('.inspirations-slider-wrapper',current_slide_inspirations)
+
+    document.querySelectorAll(link + " .slide")[current_slide_inspirations].style.height = "582px"
+
+    document.querySelector(link).style.right = slide_width * current_slide_inspirations + gap * current_slide_inspirations + "px"
+}
+
+function nav_slider_inspirations(link,current_slide,choice){
+    if(choice === 0 ){
+        document.querySelectorAll(link + ' .nav-slider span')[current_slide].style.border = "1px solid rgba(255,255,255,0)"
+        document.querySelectorAll(link + ' .nav-slider div')[current_slide].style.background = "var(--gray5)"
+    }else{
+        document.querySelectorAll(link + ' .nav-slider span')[current_slide].style.border = "1px solid var(--primary)"
+        document.querySelectorAll(link + ' .nav-slider div')[current_slide].style.background = "var(--primary)"
+    }
+}
+
+let number_box_info_inspirations = [01,02,03,01]
+let name_box_info_inspirations = ['Bed Room','Kitchen','Chest of Drawers','Bed Room']
+let philosophy_box_info_inspirations = ['Inner Peace','Purity','Comfort','Inner Peace']
+function info_box_inspirations(link,current_slide){
+    document.querySelector(link + ' .info-box h4').innerHTML = philosophy_box_info_inspirations[current_slide]
+    document.querySelector(link + ' .info-box p:first-of-type').innerHTML = number_box_info_inspirations[current_slide]
+    document.querySelector(link + ' .info-box p:last-of-type').innerHTML = name_box_info_inspirations[current_slide]
+}

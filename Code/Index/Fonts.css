@@ -222,12 +222,31 @@ header form::placeholder{
     color: var(--gray2);    
 }
 .inspirations a{
-    font-family: Gilroy-semibold;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     color: var(--white);    
 }
-
+.inspirations-wrapper .info-box h4{
+    font-family: Gilroy;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    color: var(--gray1);
+}
+.inspirations-wrapper .info-box p{
+    font-family: Gilroy;
+    font-style: normal;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray2);    
+}
 
 
 
